@@ -19,7 +19,6 @@
     "prettier",
     "eslint:recommended",
     "plugin:css-import-order/recommended",
-    "plugin:react-hooks/recommended",
     "plugin:@typescript-eslint/recommended"
   ],
   "plugins": [
@@ -29,7 +28,6 @@
     "import",
     "css-import-order",
     "prettier",
-    "react-hooks",
     "@typescript-eslint"
   ],
   "settings": {
