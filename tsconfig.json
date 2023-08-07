@@ -10,8 +10,10 @@
     "isolatedModules": true,
     "removeComments": true,
     "downlevelIteration": true,
+
     /* Strict Type-Checking */
     "strict": true,
+
     /* Linter Checks */
     "noImplicitAny": true,
     "noImplicitThis": true,
@@ -20,6 +22,7 @@
     "noImplicitReturns": false,
     "noFallthroughCasesInSwitch": true,
     "useDefineForClassFields": true,
+
     /* Module Resolution */
     "module": "esnext",
     "outDir": "./dist",
