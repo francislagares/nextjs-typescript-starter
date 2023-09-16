@@ -39,5 +39,5 @@ jobs:
       - name: Cypress.io
         uses: cypress-io/github-action@v6
         with:
-          start: yarn dev
+          start: yarn start
           browser: chrome
