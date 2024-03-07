@@ -1,10 +1,10 @@
 module.exports = {
   // Run type-check on changes to TypeScript files
-  '**/*.ts?(x)': () => 'yarn type-check',
+  '**/*.ts?(x)': () => 'pnpm type-check',
 
   // Run ESLint on changes to JavaScript/TypeScript files
-  '**/*.(ts|js)?(x)': filenames => `yarn lint ${filenames.join(' ')}`,
+  '**/*.(ts|js)?(x)': filenames => `pnpm lint ${filenames.join(' ')}`,
 
   // Format MarkDown and JSON
-  '**/*.(md|json)': filenames => `yarn prettier --write ${filenames.join(' ')}`,
+  '**/*.(md|json)': filenames => `pnpm prettier --write ${filenames.join(' ')}`,
 };

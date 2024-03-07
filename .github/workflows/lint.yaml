@@ -1,4 +1,4 @@
-name: CI - Unit Tests
+name: CI - Lint
 
 on:
   - push
@@ -43,5 +43,5 @@ jobs:
       - name: Install Dependencies
         run: pnpm install
 
-      - name: Run Tests
-        run: pnpm test:ci
+      - name: Run Linter
+        run: pnpm lint

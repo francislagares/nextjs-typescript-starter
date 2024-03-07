@@ -21,9 +21,18 @@ export default defineConfig({
     environment: 'jsdom',
     setupFiles: './src/setupTests.ts',
     coverage: {
+      enabled: true,
       provider: 'v8',
       reporter: ['text', 'html'],
-      exclude: ['node_modules/', 'src/setupTests.ts'],
+      exclude: [
+        'node_modules/',
+        '.next/',
+        '.storybook/',
+        'public/',
+        'stories',
+        'marvel-app/src',
+        'src/setupTests.ts',
+      ],
     },
   },
   resolve: {
