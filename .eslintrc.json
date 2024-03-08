@@ -20,7 +20,6 @@
     "eslint:recommended",
     "plugin:css-import-order/recommended",
     "plugin:@typescript-eslint/recommended",
-    "plugin:@tanstack/eslint-plugin-query/recommended",
     "plugin:react-hooks/recommended",
     "plugin:testing-library/react",
     "plugin:jest-dom/recommended",
@@ -31,9 +30,8 @@
     "jest-dom",
     "jsx-a11y",
     "import",
-    "prettier",
-    "react-hooks",
     "css-import-order",
+    "prettier",
     "@typescript-eslint"
   ],
   "settings": {
@@ -116,97 +114,67 @@
           },
 
           {
-            "pattern": "**/@mui/**",
-            "group": "external",
-            "position": "before"
-          },
-
-          {
-            "pattern": "**/@emotion/**",
-            "group": "external",
-            "position": "before"
-          },
-
-          {
-            "pattern": "react-redux",
-            "group": "external",
-            "position": "before"
-          },
-
-          {
-            "pattern": "redux-persist/**",
-            "group": "external",
-            "position": "before"
-          },
-
-          {
-            "pattern": "**/@store/**",
+            "pattern": "@/layout/**",
             "group": "internal",
             "position": "before"
           },
 
           {
-            "pattern": "**/@layout/**",
+            "pattern": "@/screens/**",
             "group": "internal",
             "position": "before"
           },
 
           {
-            "pattern": "**/@screens/**",
+            "pattern": "@/features/**",
             "group": "internal",
             "position": "before"
           },
 
           {
-            "pattern": "**/@features/**",
+            "pattern": "@/components/**",
             "group": "internal",
             "position": "before"
           },
 
           {
-            "pattern": "**/@components/**",
+            "pattern": "@/services/**",
+            "group": "internal",
+            "position": "after"
+          },
+
+          {
+            "pattern": "@/hooks/**",
             "group": "internal",
             "position": "before"
           },
 
           {
-            "pattern": "**/@services/**",
+            "pattern": "@/shared/**",
             "group": "internal",
             "position": "before"
           },
 
           {
-            "pattern": "**/@hooks/**",
+            "pattern": "@/interfaces/**",
             "group": "internal",
             "position": "before"
           },
 
           {
-            "pattern": "**/@shared/**",
+            "pattern": "@/utils/**",
             "group": "internal",
             "position": "before"
           },
 
           {
-            "pattern": "**/@interfaces/**",
+            "pattern": "@/config/**",
             "group": "internal",
             "position": "before"
           },
 
           {
-            "pattern": "**/@utils/**",
-            "group": "internal",
-            "position": "before"
-          },
-
-          {
-            "pattern": "**/@config/**",
-            "group": "internal",
-            "position": "before"
-          },
-
-          {
-            "pattern": "**/@events/**",
+            "pattern": "@/events/**",
             "group": "internal",
             "position": "before"
           }
