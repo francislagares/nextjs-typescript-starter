@@ -58,11 +58,15 @@ export default [
 
     rules: {
       'prettier/prettier': 'error',
-      'no-undef': 'warn',
+      'no-undef': 'off',
+      'no-unused-vars': 'off',
       'array-bracket-spacing': 1,
+      'react/prop-types': ['off'],
       'react-hooks/rules-of-hooks': 'error',
       'react-hooks/exhaustive-deps': 'warn',
       'react/function-component-definition': 'off',
+      '@typescript-eslint/no-unused-vars': 'warn',
+      '@typescript-eslint/no-explicit-any': 'warn',
 
       'import/prefer-default-export': 'off',
       'import/named': 'error',
@@ -120,12 +124,6 @@ export default [
 
             {
               pattern: '@/layout/**',
-              group: 'internal',
-              position: 'before',
-            },
-
-            {
-              pattern: '@/screens/**',
               group: 'internal',
               position: 'before',
             },
