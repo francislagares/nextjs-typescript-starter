@@ -8,7 +8,5 @@ test('Pages Router', () => {
 
   const main = within(screen.getByRole('main'));
 
-  expect(
-    main.getByRole('link', { name: /By Vercel Logo/i }),
-  ).toBeInTheDocument();
+  expect(main.getByRole('link', { name: /Deploy Now/i })).toBeInTheDocument();
 });
