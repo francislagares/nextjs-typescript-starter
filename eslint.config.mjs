@@ -1,4 +1,5 @@
 import eslintRecomended from '@eslint/js';
+import eslintNextPlugin from '@next/eslint-plugin-next';
 import typeScriptEslintPlugin from '@typescript-eslint/eslint-plugin';
 import typescriptParser from '@typescript-eslint/parser';
 import eslintConfigPrettier from 'eslint-config-prettier';
@@ -41,6 +42,7 @@ export default [
       'react-hooks': eslintPluginReactHooks,
       'testing-library': eslintTestingLibrary,
       'typescript-eslint': typeScriptEslintPlugin,
+      next: eslintNextPlugin.configs.recommended,
       import: eslintImportPlugin,
       prettier: prettierPlugin,
     },
