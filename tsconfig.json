@@ -31,6 +31,7 @@
     "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
+    "types": ["vitest/globals"],
     "plugins": [
       {
         "name": "next"
@@ -38,7 +39,7 @@
     ],
     "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"],
+      "@/*": ["./src/*"],
       "vite": ["node_modules/vite"]
     },
     "noEmit": true,
@@ -50,7 +51,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "vite.config.mts"
+    "vitest.config.mts"
   ],
   "exclude": ["node_modules", "cypress.config.ts"]
 }

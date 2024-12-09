@@ -1,15 +1,5 @@
-import * as matchers from '@testing-library/jest-dom/matchers';
-import { TestingLibraryMatchers } from '@testing-library/jest-dom/matchers';
+import '@testing-library/jest-dom/vitest';
 import { cleanup } from '@testing-library/react';
-import { afterEach, beforeAll, expect, vi } from 'vitest';
-
-declare module 'vitest' {
-  interface Assertion<T = any>
-    extends jest.Matchers<void, T>,
-      TestingLibraryMatchers<T, void> {}
-}
-
-expect.extend(matchers);
 
 // mocking methods which are not implemented in JSDOM
 beforeAll(() => {
@@ -28,7 +18,7 @@ beforeAll(() => {
   });
 });
 
-// runs a cleanup after each test case (e.g. clearing jsdom)
+// runs a cleanup after each test case (e.g. clearing jsdom || happy-dom)
 afterEach(() => {
   cleanup();
 });
