@@ -37,7 +37,7 @@
         "name": "next"
       }
     ],
-    "baseUrl": ".",
+    "baseUrl": "./",
     "paths": {
       "@/*": ["./src/*"],
       "vite": ["node_modules/vite"]
@@ -45,13 +45,6 @@
     "noEmit": true,
     "incremental": true
   },
-  "include": [
-    "cypress",
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
-    ".next/types/**/*.ts",
-    "vitest.config.mts"
-  ],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
   "exclude": ["node_modules", "cypress.config.ts"]
 }

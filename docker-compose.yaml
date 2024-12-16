@@ -1,22 +1,26 @@
 services:
-  app:
-    container_name: nextjs-app
-    image: nextjs-app
+  dev:
+    container_name: nextjs-dev
     build:
       context: .
-      dockerfile: Dockerfile
-    ports:
-      - '3000:3000'
-    networks:
-      - nextjs-app
+      target: development
     volumes:
       - .:/app
       - /app/node_modules
+      - /app/.next
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=development
+    command: pnpm dev
 
-networks:
-  nextjs-app:
-    name: nextjs-app
-
-volumes:
-  nextjs-app:
-    name: nextjs-app
+  prod:
+    container_name: nextjs-prod
+    build:
+      context: .
+      target: production
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+    command: npm start
