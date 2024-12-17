@@ -10,7 +10,7 @@
     "test:ci": "vitest run",
     "test:watch": "vitest watch --ui",
     "test:coverage": "vitest run --coverage",
-    "storybook": "storybook dev -p 6006",
+    "storybook": "storybook dev -p 6006 --initial-path=/onboarding --quiet",
     "storybook:build": "storybook build",
     "cypress:run": "cypress run",
     "cypress:open": "cypress open",
@@ -18,10 +18,10 @@
     "format": "prettier --ignore-path .gitignore \"src/**/*.+(ts|js|tsx|json|md)\" --write",
     "lint": "eslint --fix",
     "stylelint": "stylelint **/*.{css,scss} --fix",
-    "build-storybook": "storybook build",
     "prepare": "husky || true"
   },
   "dependencies": {
+    "@sentry/nextjs": "^8.46.0",
     "next": "15.1.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
@@ -86,7 +86,7 @@
     "husky": "^9.1.7",
     "jsdom": "^25.0.1",
     "lint-staged": "^15.2.11",
-    "msw": "^2.6.9",
+    "msw": "^2.7.0",
     "msw-storybook-addon": "^2.0.4",
     "postcss": "^8.4.49",
     "postcss-styled-syntax": "^0.7.0",
